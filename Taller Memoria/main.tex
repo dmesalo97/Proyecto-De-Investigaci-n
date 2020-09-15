@@ -43,59 +43,6 @@
     \end{center}
 \end{titlepage}
 
-\tableofcontents
-
-\section{Sección introductoria}
-Esta es la primera sección, podemos agregar algunos elementos adicionales y todo será escrito correctamente. Más aún, si una palabra es demasiado larga y tiene que ser truncada, babel tratará de truncarla correctamente dependiendo del idioma.
-
-\section{Sección de contenido} \label{contenido}
-
-Esta sección es para ver qué pasa con los comandos 
-que definen texto
-
-El paquete también agrega un comportamiento especial 
-a <<estas marcas para hacer citas textuales>> tal como 
-lo indican las reglas de la RAE.% \cite{dirac}
-
-\begin{lstlisting}
-#include <stdio.h>
-#define N 10
-/* Block
- * comment */
-
-int main()
-{
-    int i;
-
-    // Line comment.
-    puts("Hello world!");
-    
-    for (i = 0; i < N; i++)
-    {
-        puts("LaTeX is also great for programmers!");
-    }
-
-    return 0;
-}
-\end{lstlisting}
-
-A continuación se presenta el logo de C++ Figura (\ref{fig:cpplogo})
-
-\begin{figure}[htp]
-\includegraphics[width=4cm]{cpplogo.png}
-\centering
-\caption{Logo de C++}
-\label{fig:cpplogo}
-\end{figure}
-
-En la sección de teoremas (\ref{contenido})
-
-\section{Conclusión} \label{conclulsion}
-
-\bibliographystyle{IEEEtran}
-\bibliography{references}
-
-\vfill
 
 \newpage
 \begin{center}
@@ -120,7 +67,12 @@ En la sección de teoremas (\ref{contenido})
         \item \textbf{Gestión:} La memoria tiene como unidad básica de almacenamiento el dígito binario, cada uno de estos se almacenan en una celda de la memoria, la información e instrucciones contienen millones de bits que son procesados en la unidad de procesamiento central (CPU), cuando se hace un cambio en la información, el sistema operativo asigna un espacio dentro de la memoria RAM para dicho cambio, el tiempo requerido para hacerlo se conoce como latencia de la memoria. El intercambio de información entre la CPU y RAM es de baja latencia con respecto a la memoria caché interna que contiene la CPU, los cambios se pueden almacenar solo siempre y cuando la computadora esté encendida, entonces para que no se eliminen cuando se apague la computadora hay que transferirlos a un dispositivo de almacenamiento de largo plazo llamado disco duro.\\
         \item \textbf{Caracterización:} La estructura de la memoria en cualquier sistema informático se conforma por varios tipos de memoria que dependiendo del cambio que se realice con la información, sus componentes de fabricación y diseño físico controlarán el flujo de bits lo cual hará que una sea más rápida respecto a otra obteniendo una mayor eficiencia temporal y energética.
         \vfill
-        \bibliography{references}
+        %\bibliography{references}
+        \begin{thebibliography}{X}
+            \bibitem[1]{Aug} \textsc{Augusto Salazar},  \textsc{Nociones de la memoria del computador}, Medellín, 2020.
+            \bibitem[2]{Dul} \textsc{Dulce María García Barrera}, \textsc{¿Cómo funciona la memoria de un computador?}, 2007. https://www.gestiopolis.com/como-funciona-memoria-computador/
+            \bibitem[3]{Mar} \textsc{María Estela Raffino}, \textsc{Concepto de computadora}, Argentina, 2020. https://concepto.de/computadora/
+        \end{thebibliography}
     \end{itemize}
 \end{flushleft}
 
